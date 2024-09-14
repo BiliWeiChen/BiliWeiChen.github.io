@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="梁振华">
+    <style>
+/* 默认样式，适用于大屏幕设备 */
+img.responsive {
+  width: 100%;
+  height: auto;
+}
+ 
+/* 针对手机设备的样式 */
+@media only screen and (max-width: 600px) {
+  img.responsive {
+    width: 100%; /* 宽度设置为100%，高度自动调整 */
+  }
+}
+</style>
     <title>今日诗</title>
 </head>
 <body>
