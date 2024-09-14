@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="梁振华">
 <style>
-    img {
-    @media only screen {
-      img {
-          max-width: 100%;
-          height: auto;
-      }
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            img {
+                width: auto; /* 电脑端可以随意调节大小 */
+                height: auto; /* 保持原始比例 */
+            }
+        }
 </style>
     <title>今日诗</title>
 </head>
