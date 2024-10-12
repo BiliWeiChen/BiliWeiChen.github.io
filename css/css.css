@@ -1,1 +1,7 @@
-.style1{font-family: "微软雅体";font-weight: bold;text-align: center;}
+
+h1{text-align: center;color: red;font-family: "微软雅体";font-weight: bold;text-shadow: 5px 5px 5px black;font-size: 40px;letter-spacing: 20px;}
+h2{text-align: center;font-family: "仿宋";font-weight: bold;}
+.p1{font-family: "微软雅体";font-weight: bold;line-height: 1em;font-size: 25px;}
+.p2{text-indent: 2em;font-family: 仿宋;font-weight: bold;font-size:20px;}
+.p3{font-family: 仿宋;font-weight: bold;font-size:1.5em;white-space: pre;line-height: 2em;}
+.p4{font-family: 微软雅体;text-align: right;font-weight: bold;font-size: 30px;line-height: 1.5em;}
