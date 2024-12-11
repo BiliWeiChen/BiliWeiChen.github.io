@@ -1,49 +1,19 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
-body{background-color: #f1f1f1;}
-.div1{width: 750px;height: 700px;
-    margin: 50px auto;
-    border-radius: 50%;
-    border: 10px solid rgb(117, 117, 117);
-    background: url(../image/div1.png);
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    padding-top: 50px;
-    /* 大背景 */
-}
-.div2{
-    width: 372px;
-    height: 480px;
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 15px 15px 12px #000;
-    margin: 0 auto;
-    margin-top: 20px;
-    /* 排行榜主体div2，在div1里面 */
-}
-.div2 p{
-    width: 372px;
-    height: 55px;
-    text-align: center;
-    background: #504d58 url(../image/icon.png) no-repeat ;
-    color: #d6d6d6;
-    font-size: 18px;
-    margin-bottom: 2px;
-    line-height: 55px;
-    font-family: "微软雅黑";
-    /* 排行榜文字样式 在div2里面 */
-}
-.div2 .tp{
-    width: 372px;
-    height: 230px;
-    background: #fff url(../image/top.png);
-    background-size: 220px 220px;
-    background-repeat: no-repeat;
-    border-radius: 30px 30px;
-    background-position: center 10px;
-    /* 排行榜上部界面 */
-}
-.div2 .yj{
-    border-radius: 0 0 30px 30px;
-    /* 给最后一个p上圆角 */
-}
+*{padding: 0;margin: 0;}
+ul{list-style: none;}
+h1{color: darkgreen;}
+div{border-style: solid;border-color: rgba(85, 170, 127, 1.0);
+    border-width: 1px;width: 700px;height: 380px;border-radius: 10px;}
+.container{width: 800px;margin: 50px auto;}
+.container li{float: left;width: 170px;margin: 15px 10px;
+    padding: 5px; border-radius: 5px;box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);}
+.container li img{width: 170px ;height: 120px;border-radius:5px;
+    vertical-align: bottom;}
+.container li:nth-child(1){transform: rotate(30deg);}
+.container li:nth-child(2){transform: rotate(-15deg);}
+.container li:nth-child(3){transform: rotate(20deg);}
+.container li:nth-child(4){transform: rotate(-10deg);}
+.container li:nth-child(5){transform: rotate(10deg);}
+.container li:nth-child(6){transform: rotate(-5deg);}
+.container li:nth-child(7){transform: rotate(10deg);}
+.container li:nth-child(8){transform: rotate(-10deg);}
+.container li:hover{transform: rotate(0deg);scale: 3;}
