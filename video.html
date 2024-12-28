@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="计应2433梁振华">
+    <title>Mikufans</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 头 -->
+  <header>
+    <a href="index.html"><img src="image/headimg.png" alt="" class="head-img"></a>
+  </header>
+    <!-- 头 -->
+
+  <!-- 导航栏 -->
+  <div class="nav">
+    <ul class="navlist">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="character.html">人物</a></li>
+        <li><a href="image.html">图片</a></li>
+        <li><a href="video.html">视频</a></li>
+    </ul>
+</div>
+
+<!-- 导航栏 -->
+
+  <!-- 轮播图 -->
+  <ul class="slides">
+    <input type="radio" id="control-1" name="control" checked>
+    <input type="radio" id="control-2" name="control">
+    <input type="radio" id="control-3" name="control">
+    
+    
+    <div class="navigator slide-1">
+      <label for="control-3">
+        <i class="fas fa-chevron-left"></i>
+      </label>
+      <label for="control-2">
+        <i class="fas fa-chevron-right"></i>
+      </label>
+    </div>
+    
+    <div class="navigator slide-2">
+      <label for="control-1">
+        <i class="fas fa-chevron-left"></i>
+      </label>
+      <label for="control-3">
+        <i class="fas fa-chevron-right"></i>
+      </label>
+    </div>
+    
+    <div class="navigator slide-3">
+      <label for="control-2">
+        <i class="fas fa-chevron-left"></i>
+      </label>
+      <label for="control-1">
+        <i class="fas fa-chevron-right"></i>
+      </label>
+    </div>
+    
+    
+    <li class="slide"></li>
+    <li class="slide"></li>
+    <li class="slide"></li>
+    
+    <div class="controls-visible">
+      <label for="control-1"></label>
+      <label for="control-2"></label>
+      <label for="control-3"></label>
+    </div>
+  </ul>
+  <!-- 轮播图 -->
+
+  <!-- 主要内容 -->
+<div class="main-bg">
+    <div class="title">
+    <h2>视频鉴赏</h2>
+    </div>
+    <div class="vcontainer">'
+        <ul>
+            <li><p>神的随波逐流MV</p><video src="video/sbzl.mp4" controls class="video"></video></li>
+            <li><p>深海少女Live</p><video src="video/shsn.mp4" controls class="video"></video></li>
+        </ul>
+    </div>
+</div>
+  <!-- 主要内容 -->
+
+    <!-- 尾部内容 -->
+    <footer>
+        <p>制作：计应2433梁振华</p>
+    </footer>
+    <!-- 尾部内容 -->
+</body>
+</html>
