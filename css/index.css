@@ -3,6 +3,15 @@
   
 body{width: 1800px;}
 
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
 /* 头开始 */
 header{background: #39C5BB;width: 1897px;}
 .head-img{margin-left: 300px;}
