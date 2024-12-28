@@ -1,0 +1,195 @@
+/* 初始化 */
+*{margin: 0 ;padding: 0;list-style: none;text-decoration: none;}
+  
+body{width: 1800px;}
+
+/* 头开始 */
+header{background: #39C5BB;width: 1897px;}
+.head-img{margin-left: 300px;}
+/* 头结束 */
+
+/* 导航开始 */
+.nav{background: #6cf;height: 50px;width: 1897px;}
+li{font-size: 24px;float: left;position: relative;left: 200px;padding-left: 130px;padding-top: 7px;}
+a:hover{color: red;}
+/* 导航结束 */
+
+/* 尾部开始 */
+footer{background: #39C5BB;width: 1897px;height: 100px;display: grid; place-items: center;font-size: 20px; }
+/* 尾部结束 */
+
+/* 轮播图开始 */
+ul.slides {
+  position: relative;
+  width: 1897px;
+  height: 900px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  overflow: hidden;
+  
+}
+
+li.slide {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 120px;
+  color: #fff;
+  transition: .5s transform ease-in-out;
+}
+
+.slide:nth-of-type(1) {
+  background: url(../image/lb1.png) ;
+}
+
+.slide:nth-of-type(2) {
+    background: url(../image/lb2.png);
+  left: 100%;
+}
+
+.slide:nth-of-type(3) {
+    background: url(../image/lb3.png);
+  left: 200%;
+}
+
+input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+.controls-visible label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 2px solid #fff;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+  transform: translatex(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+  transform: translatex(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+  transform: translatex(-200%);
+}
+
+
+
+.navigator {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: none;
+}
+
+.navigator i {
+  font-size: 32px;
+  color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .navigator:nth-of-type(1) {
+  display: flex;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .navigator:nth-of-type(2) {
+  display: flex;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .navigator:nth-of-type(3) {
+  display: flex;
+}
+/* 轮播图结束 */
+
+/* 首页内容开始 */
+.main-bg{width: 1897px;display: block;}
+.container{display: flex;background: rgb(163, 241, 235);padding-left: 350px;padding-top: 20px;padding-bottom: 20px;}
+/* 大盒子 */
+.pic1 img{height: 400px;width: auto;border-radius: 20px;}
+.pic2 img{height: 400px;width: auto;border-radius: 20px;}
+.text1{
+  margin-left: 250px;
+	float: right;
+	width: 620px;
+	line-height: 35px;
+	color: #000000;
+  font-size: 20px;}
+.text2{
+    margin-right: 250px;
+    float: left;
+    width: 620px;
+    line-height: 35px;
+    color: #000000;
+    font-size: 20px;}
+/* 两个不同的文字样式 */
+.title{
+    background: #577fbc;
+    line-height: 40px;
+    padding: 0 350px;
+}
+.title h2 {
+    font-size: 20px;
+    color: #fff;
+  }
+/* 首页内容结束 */
+
+/* 人物页面开始 */
+.ctitle{ display: flex  ;
+  justify-content: center;background: rgb(163, 241, 235);font-size: 24px;}
+.cdiv{text-align: center;}
+.cimg{height: 280px;width: auto;border-radius: 50%;}
+/* 人物页面结束 */
+
+/* 图片页面开始 */
+.mcontainer{background:rgb(163, 241, 235) ;display: flex;}
+.mul{position: relative;right: 150px;}
+.mimg{height: 240px;width: auto;border-radius: 20px;}
+/* 图片页面结束 */
+
+/* 视频页面开始 */
+.vcontainer{background:rgb(163, 241, 235) ;display: flex;}
+.mli li{padding-top: 20px;}
+.video{height: 720px;width: auto;border: #ff7b00 solid 3px;}
+/* 视频页面结束 */
+
