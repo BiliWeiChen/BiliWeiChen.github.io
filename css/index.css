@@ -5,15 +5,16 @@ body{width: 1800px;}
 
 @media (max-width: 600px) {
 
-  body {
+
+  .container {
 
 
-      flex-direction: column;
+      grid-template-columns: 1fr;
 
+
+      grid-template-rows: repeat(4, 1fr);
 
   }
-
-
 }
 
 /* 头开始 */
@@ -25,6 +26,7 @@ header{background: #39C5BB;width: 1897px;}
 .nav{background: #6cf;height: 50px;width: 1897px;}
 li{font-size: 24px;float: left;position: relative;left: 200px;padding-left: 130px;padding-top: 7px;}
 a:hover{color: red;}
+a{color: white;}
 /* 导航结束 */
 
 /* 尾部开始 */
